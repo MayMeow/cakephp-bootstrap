@@ -1,0 +1,38 @@
+{
+  "name": "cakebootstrap",
+  "version": "1.0.0",
+  "description": "## Installation",
+  "main": "postcss.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --watch --mode=production"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^9.5.0",
+    "bootstrap": "^4.3.1",
+    "exports-loader": "^0.7.0",
+    "imports-loader": "^0.8.0",
+    "popper.js": "^1.15.0",
+    "postcss-loader": "^3.0.0",
+    "precss": "^4.0.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-pro": "^5.8.1",
+    "css-loader": "^2.1.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^3.0.1",
+    "image-webpack-loader": "^4.6.0",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "transfer-webpack-plugin": "^0.1.4",
+    "url-loader": "^1.1.2"
+  }
+}

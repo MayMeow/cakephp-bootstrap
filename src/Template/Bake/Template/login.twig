@@ -1,0 +1,36 @@
+{#
+/**
+ * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+ * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ *
+ * Licensed under The MIT License
+ * For full copyright and license information, please see the LICENSE.txt
+ * Redistributions of files must retain the above copyright notice.
+ *
+ * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * @link          http://cakephp.org CakePHP(tm) Project
+ * @since         2.0.0
+ * @license       http://www.opensource.org/licenses/mit-license.php MIT License
+ */
+#}
+<?php
+/**
+ * @var \{{ namespace }}\View\AppView $this
+ */
+ $this->extend('CakeBootstrap./_Common/boxed-simple');
+?>
+<!-- Page Content -->
+<?= $this->Form->create(null, ['class' => 'form-signin']) ?>
+<h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+<label for="email" class="sr-only">Email address</label>
+<input type="email" name="email" id="email" class="form-control" placeholder="Email address" required autofocus>
+<label for="password" class="sr-only">Password</label>
+<input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
+<div class="checkbox mb-3">
+    <label>
+        <input type="checkbox" value="remember-me"> Remember me
+    </label>
+</div>
+<?= $this->Form->button(__('Login'), ['class' => 'btn btn-lg btn-primary btn-block']); ?>
+<?= $this->Form->end() ?>
+<!-- END Page Content -->
